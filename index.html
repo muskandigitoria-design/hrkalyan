@@ -1,195 +1,200 @@
+
+
+
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HR Kalyan Matka - Download</title>
+<title>HR Kalyan Matka– Download No.1 Online</title>
+
+<!-- PRELOAD IMAGE -->
+<link rel="preload" as="image" href="/image/hero-img.png">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', Arial, sans-serif;
 }
 
-/* HEADER */
-header {
-    background: #1a73e8;
-    padding: 20px 15px;
-    color: #fff;
-    text-align: center;
-}
-
-/* LOGO */
-.logo-box {
-    width: 110px;
-    height: 110px;
-    margin: 0 auto 10px;
-    background: #ffffff;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-.logo-box img {
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-}
-
-header h1 {
-    font-size: 24px;
-    margin: 8px 0 0;
+body{
+  background:#f2b08f;
 }
 
 /* HERO */
-.hero {
-    background: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px 16px;
 }
 
-.hero h2 {
-    font-size: 34px;
-    margin-bottom: 12px;
+.hero-box{
+  max-width:1200px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
 }
 
-.hero p {
-    font-size: 17px;
-    margin-bottom: 22px;
-    line-height: 1.6;
+/* LEFT */
+.hero-left{
+  max-width:520px;
 }
 
-/* BUTTON */
-.btn-download {
-    background: #1a73e8;
-    color: #fff;
-    padding: 15px 32px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block;
-    transition: 0.3s;
+.hero-top a{
+  font-size:18px;
+  font-weight:600;
+  color:#000;
+  text-decoration:underline;
 }
 
-.btn-download:hover {
-    background: #1558b0;
+.hero-actions{
+  margin:16px 0;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
 }
 
-/* FEATURES */
-.features {
-    padding: 40px 20px;
-    text-align: center;
-    background: #f1f5ff;
+.btn{
+  padding:12px 20px;
+  border-radius:10px;
+  font-weight:600;
+  color:#fff;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
 }
 
-.features h3 {
-    font-size: 26px;
-    margin-bottom: 25px;
+.call{ background:#0aa89e; }
+.whatsapp{ background:#45c556; }
+
+h1{
+  font-size:46px;
+  font-weight:800;
+  color:#000;
+  line-height:1.15;
+  margin-bottom:24px;
 }
 
-.feature-box {
-    display: inline-block;
-    width: 260px;
-    margin: 10px;
-    padding: 22px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.12);
-    vertical-align: top;
+/* DOWNLOAD */
+.download-wrap{
+  background:rgba(255,255,255,0.25);
+  padding:14px;
+  border-radius:18px;
+  display:inline-block;
 }
 
-/* CONTENT SECTION */
-.content {
-    padding: 40px 20px;
-    background: #ffffff;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.7;
-    font-size: 16px;
+.download-btn{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(180deg,#f6b400,#c58a00);
+  border:none;
+  padding:18px 34px;
+  font-size:18px;
+  font-weight:700;
+  color:#fff;
+  border-radius:14px;
+  cursor:pointer;
+  animation:pulse 1.8s infinite;
 }
 
-/* FOOTER */
-footer {
-    background: #1a73e8;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
+/* Button shine */
+.download-btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.5),
+    transparent
+  );
+  transition:.6s;
 }
 
-/* MOBILE */
-@media (max-width:600px){
-    .hero h2 {font-size: 26px;}
-    .feature-box {width: 90%;}
+.download-btn:hover::before{
+  left:100%;
+}
+
+@keyframes pulse{
+  0%{ box-shadow:0 0 0 0 rgba(246,180,0,.6); }
+  70%{ box-shadow:0 0 0 14px rgba(246,180,0,0); }
+  100%{ box-shadow:0 0 0 0 rgba(246,180,0,0); }
+}
+
+/* RIGHT IMAGE */
+.hero-right{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.hero-image{
+  width:450px;
+  max-width:100%;
+  height:auto;
+  border-radius:20px;
+}
+
+/* =====================
+   📱 MOBILE OPTIMIZED
+   ===================== */
+@media(max-width:768px){
+
+  .hero-box{
+    flex-direction:column;
+    text-align:center;
+    gap:24px;
+  }
+
+  .hero-right{
+    order:-1;
+  }
+
+  h1{
+    font-size:32px;
+    line-height:1.2;
+  }
+
+  .hero-actions{
+    justify-content:center;
+  }
+
+  .btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  .download-wrap{
+    width:100%;
+  }
+
+  .download-btn{
+    width:100%;
+    padding:18px 0;
+    font-size:17px;
+  }
+
+  .hero-image{
+    width:260px;
+  }
 }
 </style>
-</head>
 
-<body>
-
-<header>
-    <!-- 🔹 LOGO SPACE -->
-    <div class="logo-box">
-        <!-- Yahan apna logo image link daal sakte ho -->
-        <img src="https://onebyone.site/wp-content/uploads/2026/01/logo-7.png" alt="HR Kalyan Matka Logo">
-    </div>
-    <h1>HR Kalyan Matka</h1>
-</header>
-
-<section class="hero">
-    <h2>HR Kalyan Matka App</h2>
-    <p>
-        HR Kalyan Matka ek trusted aur fast matka result platform hai  
-        jahan aap daily <b>Kalyan Matka Results</b>, jodi aur panel updates
-        sabse pehle dekh sakte ho.
-    </p>
-    <a class="btn-download" href="https://hrkalyanmatka.com/download" target="_blank">
-        Download App
-    </a>
-</section>
-
-<section class="features">
-    <h3>App Features</h3>
-
-    <div class="feature-box">
-        📊 <b>Live Kalyan Results</b><br><br>
-        Fast aur accurate Kalyan Matka results real-time.
-    </div>
-
-    <div class="feature-box">
-        🔔 <b>Daily Result Alerts</b><br><br>
-        Kalyan, Main Bazaar aur sabhi market ke daily updates.
-    </div>
-
-    <div class="feature-box">
-        ⭐ <b>User Friendly App</b><br><br>
-        Simple design, easy navigation, har user ke liye perfect.
-    </div>
-</section>
-
-<section class="content">
-    <h3>HR Kalyan Matka Kya Hai?</h3>
-    <p>
-        HR Kalyan Matka ek popular online platform hai jo Kalyan Matka ke
-        daily results, open close jodi, panel chart aur market updates
-        provide karta hai. Yahan users ko fast, reliable aur clear information
-        milti hai jisse wo easily latest results check kar sakte hain.
-    </p>
-
-    <p>
-        Agar aap ek aisa platform dhoondh rahe ho jo Kalyan Matka ke sabhi
-        results ek jagah par de, toh HR Kalyan Matka App aapke liye best option hai.
-    </p>
-</section>
-
-<footer>
-    © 2026 HR Kalyan Matka | All Rights Reserved
-</footer>
+<script>
+function installApp(){
+  window.location.href="https://hrkalyanmatka.com/download";
+}
+</script>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -207,5 +212,48 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1416037926826831&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-box">
+
+    <div class="hero-left">
+
+      <div class="hero-top">
+        <a href="https://hrkalyanmatka.com/download">+ Download</a>
+      </div>
+
+      <div class="hero-actions">
+        <a href="https://hrkalyanmatka.com/download" class="btn call">📞 Call Now</a>
+        <a href="https://hrkalyanmatka.com/download" class="btn whatsapp">💬 WhatsApp</a>
+      </div>
+
+      <h1>
+        Download NO.1<br>
+        Online<br>
+      HR Kalyan Matka
+
+      </h1>
+
+      <div class="download-wrap">
+        <button class="download-btn" onclick="installApp()">
+          ⬇ DOWNLOAD APP NOW
+        </button>
+      </div>
+
+    </div>
+
+    <div class="hero-right">
+      <img src="https://fantasticczone.site/image/hero-img.png"
+           alt="HR Kalyan Matka"
+           class="hero-image"
+           loading="lazy">
+    </div>
+
+  </div>
+</section>
+
 </body>
 </html>
